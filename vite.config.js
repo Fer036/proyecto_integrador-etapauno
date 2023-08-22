@@ -14,7 +14,7 @@ export default {
         rollupOptions: {
             input: {
                 carrito: resolve('pages/carrito.html'),
-                index: resolve('pages/index.html'),
+                index: resolve('index.html'),
                 contacto: resolve('pages/contacto.html')
             }
         }
