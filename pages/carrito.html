@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carrito</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+    <header class="container-fluid">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow rounded m-2">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo/logo-redondo.webp" alt="tellcell" width="50px" height="55px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-underline mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html/#aboutus">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html/#product">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <a href="../pages/carrito.html" class="text-reset me-3">
+                            <button class="btn btn-sm btn-outline-secondary" type="button"><i
+                                    class="p-1 fs-5 bi bi-cart-check-fill"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container mx-auto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-7">
+                    <div class="card mb-4">
+                        <!-- Carrito de compras -->
+                        <div class="card-header py-4">
+                            <h5 class="mb-0">Carrito de compra - <i class="bi bi-bag-heart-fill fs-5"></i> 2 artículos
+                            </h5>
+                        </div>
+                        <!-- Cuerpo del carrito -->
+                        <div class="card-body">
+
+                            <!-- Producto -->
+                            <div class="row shadow-sm m-2 card-carrito">
+                                <div class="col-3 mb-1">
+                                    <!-- imagen del producto -->
+                                    <div class="bg-image rounded m-2">
+                                        <img src="/img/product/p-jbl.webp" alt="Parlante JBL" class="w-100 rounded m-1">
+                                    </div>
+                                </div>
+                                <!-- Características del producto -->
+                                <div class="col-5">
+                                    <p class="mt-2"><strong>Parlante JBL</strong></p>
+                                    <p class="m-1">Color: NEG</p>
+                                    <p class="m-1">Micrófono: NO</p>
+                                    <p class="m-1">Precio: $</p>
+                                    <button type="button" class="btn btn-primary btn-sm me-1 my-2"><i
+                                            class="bi bi-trash3"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Producto -->
+                            <div class="row shadow-sm m-2 card-carrito">
+                                <div class="col-3 mb-1">
+                                    <!-- imagen del producto -->
+                                    <div class="bg-image rounded m-2">
+                                        <img src="/img/product/acc-otros.webp" alt="Parlante JBL"
+                                            class="w-100 rounded m-1">
+                                    </div>
+                                </div>
+                                <!-- Características del producto -->
+                                <div class="col-5">
+                                    <p class="mt-2"><strong>Acc. para Cable USB</strong></p>
+                                    <p class="m-1">Color: Personalizados</p>
+                                    <p class="m-1">Material: Silicona</p>
+                                    <p class="m-1" style="color: red;">No disponible</p>
+                                    <button type="button" class="btn btn-primary btn-sm me-1 my-2"><i
+                                            class="bi bi-trash3"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Producto -->
+                            <div class="row shadow-sm m-2 card-carrito">
+                                <div class="col-3 mb-1">
+                                    <!-- imagen del producto -->
+                                    <div class="bg-image rounded m-2">
+                                        <img src="/img/product/acc-otros3.webp" alt="Parlante JBL"
+                                            class="w-100 rounded m-1">
+                                    </div>
+                                </div>
+                                <!-- Características del producto -->
+                                <div class="col-5">
+                                    <p class="mt-2"><strong>Termo Stanley</strong></p>
+                                    <p class="m-1">Color: BLANCO</p>
+                                    <p class="m-1">MAterial: Acero</p>
+                                    <p class="m-1">Precio: $</p>
+                                    <button type="button" class="btn btn-primary btn-sm me-1 my-2"><i
+                                            class="bi bi-trash3"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumen de compra -->
+                <div class="col-3">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                            <h5 class="mb-0">Resumen de compra:</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                    <h6>Productos:</h6>
+                                    <span>$12.000.-</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 mb-4">
+                                    <h6>Envío:</h6>
+                                    <span>Gratis</span>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-3 py-2 shadow">
+                                    <span><strong>Total:</strong></span>
+                                    <span><strong>$12.000.-</strong></span>
+                                </li>
+                            </ul>
+                            <!-- boton pagar -->
+                            <button type="button" class="btn btn-sucess btn-sm btn-block mt-4">Pagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Métodos de pago -->
+            <div class="card mx-auto container-tarjeta">
+                <div class="card-body tarjetas mx-auto">
+                    <p><strong>Métodos de pago aceptados:</strong></p>
+                    <img src="/img/pay/american-express.svg" alt="amex">
+                    <img src="/img/pay/mastercard.svg" alt="mastercard" class="me-2">
+                    <img src="/img/pay/paypal.svg" alt="paypal" class="me-2">
+                    <img src="/img/pay/visa.svg" alt="visa" class="me-2">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid row shadow rounded m-2" id="footer">
+        <!-- dirección -->
+        <div class="col-3 p-4 mx-auto">
+            <address class="p-4">Av. San Martín 970 <br> Villa del Rosario <br> Córdoba, Argentina</address>
+        </div>
+
+        <!-- logo y redes sociales -->
+        <div class="col-3 mx-auto pb-3">
+            <img src="../img/logo/logo-tellcell-vertical.webp" alt="logo" width="160px" height="100px">
+            <div>
+                <a class="text-reset ms-3 p-2" href="https://www.instagram.com/tellcellvdr/"><i
+                        class="icon-ig bi bi-instagram"></i></a>
+                <a class="text-reset m-2 p-2" href="https://www.facebook.com/tellcellvdr"><i
+                        class="icon-fb bi bi-facebook"></i></a>
+                <a class="text-reset m-1 p-2" href="mailto: tellcellvdr@gmail.com"><i
+                        class="icon-mail bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- copyrigth -->
+        <div class="col-3">
+            <p><i class="bi bi-c-circle-fill"></i> 2023 - Todos los
+                derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contacto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow rounded m-2">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo/logo-redondo.webp" alt="tellcell" width="50px" height="55px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-underline mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html/#aboutus">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html/#product">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <a href="../pages/carrito.html" class="text-reset me-3">
+                            <button class="btn btn-sm btn-outline-secondary" type="button"><i
+                                    class="p-1 fs-5 bi bi-cart-check-fill"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contacto -->
+    <main class="container mx-auto">
+        <!-- Datos de contacto -->
+        <section class="row row d-flex justify-content-center">
+            <div class="col-3">
+                <div class="card my-5">
+                    <div class="card-header py-3">
+                        <h5 class="m-0">Datos de contacto:</h5>
+                    </div>
+                    <ul class="contact-list my-1 mx-2">
+                        <li class="my-3">
+                            <i class="mx-2 bi bi-envelope-fill"></i>tellcellvdr@gmail.com
+                        </li>
+                        <li class="my-3">
+                            <i class="mx-2 bi bi-whatsapp"></i>+543573460642
+                        </li>
+                        <li class="my-3">
+                            <i class="mx-2 bi bi-geo-alt-fill"></i>San Martín 970, Villa del Rosario, Córdoba
+                        </li>
+                    </ul>
+                    <ul class="contact-list mx-2">
+                        <li class="mt-3">
+                            <i class="mx-2 bi bi-play-circle"></i>Redes Sociales:
+                            <ul style="list-style-type: none;">
+                                <li class="pt-3 pb-1">
+                                    <a class="text-reset ms-3 p-2" href="https://www.instagram.com/tellcellvdr/"><i
+                                            class="icon-ig bi bi-instagram"></i></a>@tellcellvdr
+                                </li>
+                                <li class="py-2">
+                                    <a class="text-reset ms-3 p-2" href="https://www.facebook.com/tellcellvdr"><i
+                                            class="icon-fb bi bi-facebook"></i></a>facebook/tellcellvdr
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="mb-4" style="text-align: center;"><i class="bi bi-clock-history"></i> Lun a Sáb de 09:00hs a 21:00hs</span>
+                </div>
+            </div>
+
+
+            <!-- Google maps -->
+                <div class="map-responsive col-4 my-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.9671730178716!2d-63.54002988790215!3d-31.552515502739418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94332a4b89872cd3%3A0xd3f25ae572ecc7ea!2sAv.%20San%20Mart%C3%ADn%20970%2C%20X5963%20Villa%20del%20Rosario%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1692677463025!5m2!1ses-419!2sar"
+                        width="500px" height="430px" style="border:0" class="mx-4" allowfullscreen></iframe>
+                </div>
+
+            <!-- Formulario de contacto -->
+            <div class="col-4">
+                <div class="card my-5 mx-3">
+                    <div class="card-header py-3">
+                        <h5 class="m-0">Formulario de contacto:</h5>
+                    </div>
+                    <form class="row p-4" action="https://formspree.io/f/myyqwwjl" method="post">
+                        <label class="form-label" for="input-name">Nombre y Apellido:</label>
+                        <input class="form-control mb-3" type="text" id="input-name" name="name"
+                            placeholder="Indícanos tu nombre y apellido">
+
+                        <label class="form-label" for="input-mail">Correo Electrónico:</label>
+                        <input class="form-control mb-3" type="email" id="input-mail" name="mail"
+                            placeholder="Indícanos tu mail">
+
+                        <label class="form-label" for="input-consulta" row="3">Consulta:</label>
+                        <input class="form-control form-control-lg" type="text" id="input-consulta" name="consulta"
+                            rows="3">
+
+                        <button class="btn btn-sucess btn-sm btn-block mt-4">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid row shadow rounded m-2" id="footer">
+        <!-- dirección -->
+        <div class="col-3 p-4 mx-auto">
+            <address class="p-4">Av. San Martín 970 <br> Villa del Rosario <br> Córdoba, Argentina</address>
+        </div>
+
+        <!-- logo y redes sociales -->
+        <div class="col-3 mx-auto pb-3">
+            <img src="../img/logo/logo-tellcell-vertical.webp" alt="logo" width="160px" height="100px">
+            <div>
+                <a class="text-reset ms-3 p-2" href="https://www.instagram.com/tellcellvdr/"><i
+                        class="icon-ig bi bi-instagram"></i></a>
+                <a class="text-reset m-2 p-2" href="https://www.facebook.com/tellcellvdr"><i
+                        class="icon-fb bi bi-facebook"></i></a>
+                <a class="text-reset m-1 p-2" href="mailto: tellcellvdr@gmail.com"><i
+                        class="icon-mail bi bi-envelope-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- copyrigth -->
+        <div class="col-3">
+            <p><i class="bi bi-c-circle-fill"></i> 2023 - Todos los
+                derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

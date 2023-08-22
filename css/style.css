@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.section-us,
+.banner {
+    box-shadow: 0px 1px .5px rgba(0, 0, 29, 0.089);
+}
+
+.aboutus-ul,
+.title-banner, .title-product {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.aboutus-ul {
+    list-style-type: none;
+    padding: 6rem 5rem;
+}
+
+.contact-list{
+    list-style-type: none;
+}
+
+/* Typewriting title */
+.div-title {
+    display: grid;
+    place-items: center;
+}
+
+.title-banner, .title-product {
+    text-align: center;
+    width: 9rem;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/* Presentación */
+#card {
+    height: 10rem;
+    margin: 4.5rem 0.5rem;
+
+    background-color: rgba(0, 0, 0, 0.219);
+    border: none;
+    color: white;
+    text-align: justify;
+}
+
+#card:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+/* Carrusel */
+.banner {
+    width: 1300px;
+}
+
+.banner-conteiner {
+    width: 1000px;
+}
+
+/* Productos */
+.producto-ul{
+    list-style-type: none;
+}
+
+.card-modify:hover{
+    transform: translate(-5px, -3px);
+}
+
+/* Botones */
+.btn{
+    background-color: white;
+    border: 1px solid #243949;
+    color: black;
+}
+
+.btn:hover{
+    background-color: #3f6481;
+    color: white;
+}
+
+/* footer */
+#footer {
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: 10rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* iconos */
+.icon-ig, .icon-fb, .icon-mail{
+    color:#243949;
+}
+.icon-ig:hover{
+    color: rgb(177, 12, 94);
+    font-size: 1.1rem;
+}
+
+.icon-fb:hover{
+    color: blue;
+    font-size: 1.1rem;
+}
+
+.icon-mail:hover{
+    color:red;
+    font-size: 1.1rem;
+}
+
+/* Carrito de compras */
+.card-carrito:hover{
+    background-color: #d6d9db;
+    color: #243949;    
+}
+
+.container-tarjeta{
+    background-color: rgba(255, 255, 255, 0.349);
+    color: white;
+}
+
+.tarjetas img{
+    width: 3rem;
+}
+
+.map-responsive{
+    overflow:hidden;
+    position:relative;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    position:absolute;
+}
