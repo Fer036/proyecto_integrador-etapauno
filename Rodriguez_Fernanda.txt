@@ -1,0 +1,4 @@
+Nombre y Apellido: Rodríguez, María Fernanda
+URL Netlify: https://digitalers-proyectoetapauno.netlify.app/
+URL GitHub: https://github.com/Fer036/proyecto_integrador-etapauno
+URL Excalidraw: https://excalidraw.com/#json=HeoyCVbpWut9A80ILrZz6,3RdLOOtVOGW4frMKmOsasA
