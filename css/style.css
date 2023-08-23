@@ -154,16 +154,3 @@ body {
 .tarjetas img{
     width: 3rem;
 }
-
-.map-responsive{
-    overflow:hidden;
-    position:relative;
-}
-
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height: 100%;
-    width:100%;
-    position:absolute;
-}
