@@ -1,7 +1,7 @@
 import 'sweetalert'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-
+import './src/theme'
 import './css/style.css'
 import { calcularTotal, comprarProducto, eliminarCompra, eliminarProducto, leerLocalStorage, leerLocalStorageCompra, obtenerEvento, procesarPedido, vaciarCarrito } from './src/carrito'
 
